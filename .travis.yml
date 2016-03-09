@@ -1,14 +1,14 @@
 language: python
 sudo: false
 python:
-  - 2.7
+  # - 2.7
   - 3.4
   - 3.5
 env:
   matrix:
-    - GROUP=docs
-    - GROUP=formgrader
-    - GROUP=nbextensions
+    # - GROUP=docs
+    # - GROUP=formgrader
+    # - GROUP=nbextensions
     - GROUP=python
 addons:
   apt:
