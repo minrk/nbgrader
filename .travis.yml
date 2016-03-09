@@ -24,6 +24,7 @@ install:
   - tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
   - export PATH=$PWD/travis-phantomjs:$PATH
   - invoke install --group="$GROUP"
+  - pip install https://github.com/minrk/jupyter_client/archive/manager-is-alive.zip
 script:
   - invoke tests --group="$GROUP"
 after_success:
